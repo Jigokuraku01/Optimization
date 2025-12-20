@@ -77,11 +77,17 @@
 
 - Графики:
 
-  - Зависимость времени от потоков (static chunk=100): ![threads_avg_time_1](assets/threads_avg_time_1.png)
+  - Зависимость времени от потоков (static chunk=100):
 
-  - Влияние chunk_size и schedule (8 потоков): ![chunk_size_avg_time_2](assets/chunk_size_avg_time_2.png)
+    ![threads_avg_time_1](assets/threads_avg_time_1.png)
 
-  - Оптимальные конфигурации по потокам: ![optimal](assets/Threads%20_%20Optimal%20Time_3.png)
+  - Влияние chunk_size и schedule (8 потоков):
+
+    ![chunk_size_avg_time_2](assets/chunk_size_avg_time_2.png)
+
+  - Оптимальные конфигурации по потокам:
+
+    ![optimal](assets/Threads%20_%20Optimal%20Time_3.png)
 
 - Ключевые численные результаты (AvgTime_ms, 10 запусков):
 
