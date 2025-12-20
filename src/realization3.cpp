@@ -40,7 +40,8 @@ double Realization3::static_execute(const InputQuery& query) {
         Rnd rnd(123456789 +
                 static_cast<std::uint64_t>(omp_get_thread_num()) * 1000003);
         std::uint64_t hit_count = 0;
-        for (std::uint64_t i = 0; i < max_n; i += threads_count) {
+        for (std::uint64_t i = tid * (max_n / threads_count);
+             i < (tid + 1) * (max_n / threads_count); ++i) {
             const float tmp_x = x_min + del_x * rnd.next_float();
             const float tmp_y = y_min + del_y * rnd.next_float();
             const float tmp_z = z_min + del_z * rnd.next_float();
