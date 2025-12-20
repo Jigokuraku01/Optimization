@@ -1,6 +1,6 @@
 #include "hit.h"
 #include "realizations.hpp"
-#include "rnd.h"
+#include "rnd.hpp"
 double Realization1::execute(const InputQuery& query) {
     const float* axis_range = get_axis_range();
     const float x_min = axis_range[0];

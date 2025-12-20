@@ -1,4 +1,4 @@
-#include "rnd.h"
+#include "rnd.hpp"
 //NOLINTBEGIN
 
 Rnd::Rnd(std::uint64_t seed) {

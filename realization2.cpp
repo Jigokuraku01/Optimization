@@ -1,7 +1,7 @@
 #include "hit.h"
 #include "my_exception.hpp"
 #include "realizations.hpp"
-#include "rnd.h"
+#include "rnd.hpp"
 #include <vector>
 
 double Realization2::execute(const InputQuery& query) {
