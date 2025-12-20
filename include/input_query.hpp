@@ -32,6 +32,6 @@ class InputQuery {
     std::string m_output_file;
     std::uint64_t m_realization;
     std::uint64_t m_threads = static_cast<std::uint64_t>(omp_get_max_threads());
-    Kind m_kind;
-    std::uint64_t m_chunk_size;
+    Kind m_kind = Kind::Dynamic;
+    std::uint64_t m_chunk_size = 600;
 };

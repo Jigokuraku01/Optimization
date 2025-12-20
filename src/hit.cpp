@@ -13,7 +13,7 @@ bool hit_test(float x, float y, float z) {
     return left_part <= right_part;
 }
 const float* get_axis_range() {
-    static const float range[6] = {-2.0F, 2.0F, -2.0F, 2.0F, 0.0F, 2.0F};
+    static const float range[6] = {-2.0F, 2.0F, -2.0F, 2.0F, -2.0F, 2.0F};
     return range;
 }
 
